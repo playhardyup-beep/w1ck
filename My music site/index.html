@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Music Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+<!-- Navigation -->
+<nav class="navbar">
+<a href="#hero" class="nav-logo">W1ck</a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#music">Music</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1><span class="accent">W1ck</span></h1>
+    <p>Afrotrap · Accra ·  Music for everyone turning their dreams into reality.</p>
+  </section>
+<!-- Music Section -->
+<section class="music" id="music">
+  <h2>Music</h2>
+  
+  <!-- Latest -->
+  <h3 class="music-sub">Latest</h3>
+  <div class="music-video">
+
+  <div class="video-thumbnail" onclick="openVideo('FwU8hjTXWSE')">
+    <img src="https://img.youtube.com/vi/FwU8hjTXWSE/maxresdefault.jpg" alt="Video 1" />
+    
+<div class="play-btn">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8 5v14l11-7z"/>
+  </svg>
+</div>    
+<p id="title1">Kid Kwesi - Callin'</p>
+  </div>
+
+  <div class="video-thumbnail" onclick="openVideo('jG6gxzM3_XA')">
+    <img src="https://img.youtube.com/vi/jG6gxzM3_XA/maxresdefault.jpg" alt="Video 2" />
+
+<div class="play-btn">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M8 5v14l11-7z"/>
+  </svg>
+</div>
+    <p id="title2">T1mmy - Addicted (feat. Kid Kwesi)</p>
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeVideo()">
+  <div class="lightbox-content">
+</div>
+</div>
+
+<!-- Projects -->
+  <h3 class="music-sub">Projects</h3>
+  <div class="music-grid">
+
+    <div class="music-card">
+      <img src="wnb.png" alt="Album 1" />
+      <h3>Wick1d N Bad</h3>
+      <p>2025</p>
+      <a href="https://open.spotify.com/album/1QYQPIy3BPsVJsMCW9gbaU?si=gOE9B3jtRHejVc02M3fYjw" target="_blank" class="listen-btn">Listen</a>
+    </div>
+
+    <div class="music-card">
+      <img src="tbmj.jpg" alt="Album 2" />
+      <h3>Trenches Babies: Mary Jane</h3>
+      <p>2023</p>
+      <a href="https://open.spotify.com/album/6sBHhJTvCUeqTlyLgu1WeT?si=b-8Hkn8oSTyPY-vw3NZVKQ" target="_blank" class="listen-btn">Listen</a>
+    </div>
+
+    <div class="music-card">
+      <img src="tm1.jpg" alt="Album 3" />
+      <h3>Tattoo Music</h3>
+      <p>2021</p>
+      <a href="https://open.spotify.com/album/3q0Ql7IKmWpikTyR4dbbRN?si=tWAcTYoMTmeCdKT-9zDeTQ" target="_blank" class="listen-btn">Listen</a>
+    </div>
+
+  </div>
+</section>
+<!-- About Section -->
+<section class="about" id="about">
+  <h2>About</h2>
+  <p>W1ck is an Afrotrap artist from Accra, Ghana. A childhood moment — a rap record being played by his brother in the living room — lit a spark that never went out. From writing his first rhymes as a kid to recording seriously from 2018, music has always been the constant.</p>
+  <p>Raised in Accra with big dreams and an even bigger appetite for more, W1ck found in music both a refuge and a purpose. His sound is rooted in truth, ambition, and the kind of hunger that only comes from wanting more than your circumstances.</p>
+  <p>The goal is simple — to be one of the biggest artists out of Africa. Every record is a step toward that.</p>
+</section>
+<!-- Contact/Social Section -->
+<section class="social" id="contact">
+  <h2>Find Me</h2>
+  <div class="social-links">
+  <a href="https://open.spotify.com/artist/2k5bJbEP7zZz1vK1p7jRPj?si=GVAXWg1cSa-dQDU04GGBGQ" target="_blank"><i class="fab fa-spotify"></i></a>
+  <a href="https://music.apple.com/gh/artist/kid-kwesi/1495138746" target="_blank"><i class="fab fa-apple"></i></a>
+  <a href="https://www.instagram.com/kidkwesi" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://x.com/kidkwesi" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.youtube.com/@kidkwesi" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.tiktok.com/@kidkwesi" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="newsletter">
+  <h2>Stay in the Loop</h2>
+  <p>Be the first to hear new music, shows and updates.</p>
+  <form id="newsletter-form">
+  <input type="email" id="email-input" placeholder="Your email address" required />
+  <button type="submit">Subscribe</button>
+</form>
+</section>
+
+<p id="newsletter-message" style="display:none; color:#00aaff; margin-top:16px; font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:1px;">You're on the list. Thanks!</p>
+</section>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-logo">W1ck</div>
+  <p class="footer-copy">© 2026 W1ck. All rights reserved.</p>
+</footer>
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+  const cards = document.querySelectorAll('.music-card');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+cards.forEach(card => observer.observe(card));
+const aboutParagraphs = document.querySelectorAll('.about p');
+const aboutObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 300);
+      aboutObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+aboutParagraphs.forEach(p => aboutObserver.observe(p));
+const socialIcons = document.querySelectorAll('.social-links a');
+const socialObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 150);
+      socialObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+socialIcons.forEach(icon => socialObserver.observe(icon));
+function openVideo(videoId) {
+  const lightbox = document.getElementById('lightbox');
+  const content = document.querySelector('.lightbox-content');
+  lightbox.classList.add('active');
+  content.innerHTML = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allowfullscreen allow="autoplay"></iframe>`;
+}
+
+function closeVideo() {
+  const lightbox = document.getElementById('lightbox');
+  const content = document.querySelector('.lightbox-content');
+  content.innerHTML = '';
+  lightbox.classList.remove('active');
+}
+
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('email-input').value;
+
+  window.mcCallback = function() {
+    // Mailchimp received it, now redirect
+    window.location.href = 'thankyou.html';
+  };
+
+  const script = document.createElement('script');
+  script.src = 'https://gmail.us11.list-manage.com/subscribe/post-json?u=aa1c6396736c2aca49f1c68ed&id=7bf309ed52&f_id=00a4d7e3f0&EMAIL=' + encodeURIComponent(email) + '&c=mcCallback';
+  document.body.appendChild(script);
+
+  // Fallback redirect in case Mailchimp doesn't respond quickly
+  setTimeout(() => {
+    window.location.href = 'thankyou.html';
+  }, 1500);
+});
+</script>
+</body>
+</html>
