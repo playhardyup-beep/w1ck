@@ -1,0 +1,548 @@
+/* Import a Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=DM+Sans:wght@300;400&family=Inter:wght@300;400&family=Urbanist:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Page background and font */
+body {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #000000;
+  z-index: 999;
+}
+
+.nav-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #f0f0f0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+/* Hero section — the big top area */
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('xx.jpg');
+  background-size: cover;
+  background-position: center 40%;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+font-family: 'Orbitron', sans-serif;
+}
+/* Accent color for the name */
+.accent {
+  color: #00aaff;
+  text-shadow: 0 0 14px #00aaff99;
+}
+.hero p {
+  font-size: 0.90rem;
+  margin-top: 16px;
+  color: #aaaaaa;
+  font-weight: 200;
+font-family: 'DM Sans', sans-serif;
+font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+/* Music Section */
+.music {
+  padding: 80px 20px;
+  background-color: #0d0d0d;
+}
+
+.music h2 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00aaff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.music-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.music-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.music-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #00aaff88;
+}
+.music-card h3 {
+  margin-top: 12px;
+  font-size: 1rem;
+font-family: 'Urbanist', sans-serif;
+}
+
+.music-card > p {
+  font-size: 0.75rem;
+  color: #666666;
+  margin-top: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Listen Button */
+.listen-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 10px;
+  border: 1px solid #00aaff;
+  color: #00aaff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.listen-btn:hover {
+  background-color: #00aaff;
+  color: #000000;
+}
+/* About Section */
+.about {
+  padding: 80px 20px;
+  max-width: 100%;
+  margin-top: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('gg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00aaff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  color: #aaaaaa;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+/* Social Section */
+.social {
+  padding: 80px 20px;
+  background-color: #0d0d0d;
+}
+
+.social h2 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #00aaff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00aaff;
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  font-size: 1.2rem;
+  color: #aaaaaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00aaff;
+}
+
+.footer-copy {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #555555;
+  letter-spacing: 1px;
+}
+/* Navbar scroll effect */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+/* Hero fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero h1 {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.hero p {
+  animation: fadeIn 1.2s ease 0.4s forwards;
+  opacity: 0;
+}
+
+
+.music-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* About fade in animation */
+.about p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Social icons animation */
+.social-links a {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.social-links a.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Tablet Styles */
+@media (max-width: 1200px) {
+  .music-grid {
+    gap: 20px;
+  }
+
+  .music-card {
+    width: 200px;
+  }
+}
+/* Mobile Styles */
+@media (max-width: 500px) {
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .music-grid {
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-card {
+  width: 80%;
+  max-width: 300px;
+}
+
+  .navbar {
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+}
+/* Music sub headings */
+.music-sub {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #f0f0f0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+/* Music Video */
+.music-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.music-video iframe {
+  width: 400px;
+  height: 225px;
+  border-radius: 8px;
+}
+/* Video Thumbnails */
+.video-thumbnail {
+  position: relative;
+  width: 400px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  animation: pulse 2s infinite;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.video-thumbnail:hover .play-btn {
+  background-color: #00aaff;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox-content iframe {
+  width: 800px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+
+#title1, #title2 {
+  font-family: 'Urbanist', sans-serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 2px !important;
+  color: #aaaaaa !important;
+  margin-top: 10px !important;
+  font-weight: 300 !important;
+  text-transform: uppercase !important;
+}
+/* Newsletter Section */
+.newsletter {
+  padding: 80px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: #00aaff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.newsletter p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  width: 300px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter input:focus {
+  border-color: #00aaff;
+}
+
+.newsletter button {
+  padding: 12px 30px;
+  background-color: #00aaff;
+  color: #000000;
+  border: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #0088cc;
+}
+
+/* iPad Pro portrait - force 2 up, 1 down */
+@media (max-width: 1024px) {
+  .music-card {
+    min-width: 320px;
+    max-width: 350px;
+  }
+}
