@@ -32,6 +32,29 @@
       <div class="footer-logo">W1ck</div>
       <p class="footer-copy">© 2026 W1ck. All rights reserved.</p>
     </footer>
+<script>
+  const aboutParagraphs = document.querySelectorAll('.about p');
+  const aboutObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 300);
+        aboutObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
 
+  aboutParagraphs.forEach(p => aboutObserver.observe(p));
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
   </body>
 </html>
