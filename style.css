@@ -525,15 +525,21 @@ font-family: 'Urbanist', sans-serif;
 }
 
 .newsletter button {
-  padding: 12px 30px;
+  padding: 8px 24px;
   background-color: #00aaff;
-  color: #000000;
+  color: #ffffff;
   border: none;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.85rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #0088cc;
 }
 
 .newsletter button:hover {
