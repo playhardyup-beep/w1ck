@@ -8,13 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
   <body>
+    <!-- Email Popup -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <h3>Stay in the Loop</h3>
+    <p>Sign up and get an unreleased track — not on any streaming platform. Plus early access to everything Kid Kwesi drops next.</p>
+    <form id="popup-form">
+      <input type="email" id="popup-email" placeholder="Your email address" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="popup-success" style="display:none; color:#00aaff; font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:1px; margin-top:16px;">You're on the list! 🎵</p>
+  </div>
+</div>
 <!-- Navigation -->
 <nav class="navbar">
 <a href="#hero" class="nav-logo">W1ck</a>
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
     <li><a href="#music">Music</a></li>
-    <li><a href="#about.html">About</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -28,7 +41,7 @@
   <h2>Music</h2>
   
   <!-- Latest -->
-  <h3 class="music-sub">Latest</h3>
+  <h3 class="music-sub">Watch Now</h3>
   <div class="music-video">
 
   <div class="video-thumbnail" onclick="openVideo('FwU8hjTXWSE')">
@@ -180,24 +193,32 @@ function closeVideo() {
   lightbox.classList.remove('active');
 }
 
-document.getElementById('newsletter-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = document.getElementById('email-input').value;
+// Popup
+setTimeout(() => {
+  document.getElementById('popup').classList.add('active');
+}, 1500);
 
-  window.mcCallback = function() {
-    // Mailchimp received it, now redirect
-    window.location.href = 'thankyou.html';
-  };
+function closePopup() {
+  document.getElementById('popup').classList.remove('active');
+}
+
+document.getElementById('popup-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('popup-email').value;
 
   const script = document.createElement('script');
-  script.src = 'https://gmail.us11.list-manage.com/subscribe/post-json?u=aa1c6396736c2aca49f1c68ed&id=7bf309ed52&f_id=00a4d7e3f0&EMAIL=' + encodeURIComponent(email) + '&c=mcCallback';
+  script.src = 'https://gmail.us11.list-manage.com/subscribe/post-json?u=aa1c6396736c2aca49f1c68ed&id=7bf309ed52&f_id=00a4d7e3f0&EMAIL=' + encodeURIComponent(email) + '&c=mcPopupCallback';
   document.body.appendChild(script);
 
-  // Fallback redirect in case Mailchimp doesn't respond quickly
+  document.getElementById('popup-form').style.display = 'none';
+  document.getElementById('popup-success').style.display = 'block';
+
   setTimeout(() => {
-    window.location.href = 'thankyou.html';
-  }, 1500);
+    closePopup();
+  }, 2000);
 });
+
+window.mcPopupCallback = function() {};
 </script>
 </body>
 </html>

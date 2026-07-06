@@ -166,10 +166,11 @@ font-family: 'Urbanist', sans-serif;
 }
 /* About Section */
 .about {
-  padding: 80px 20px;
+  padding: 120px 20px 80px 20px;
   max-width: 100%;
-  margin-top: 40px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('gg.jpg');
+  margin-top: 60px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('gg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -545,4 +546,104 @@ font-family: 'Urbanist', sans-serif;
     min-width: 320px;
     max-width: 350px;
   }
+}
+
+/* Email Popup */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-overlay.active {
+  display: flex;
+}
+
+.popup-box {
+  background-color: #111111;
+  padding: 50px 40px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  border: 1px solid #222222;
+}
+
+.popup-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #aaaaaa;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.popup-close:hover {
+  color: #ffffff;
+}
+
+.popup-box h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #00aaff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.popup-box p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #aaaaaa;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid #333333;
+  color: #f0f0f0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  border-radius: 30px;
+  outline: none;
+  margin-bottom: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.popup-box input:focus {
+  border-color: #00aaff;
+}
+
+.popup-box button[type="submit"] {
+  width: auto;
+  padding: 4px 16px;
+  background-color: #00aaff;
+  color: #ffffff;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-box button[type="submit"]:hover {
+  background-color: #0088cc;
 }
