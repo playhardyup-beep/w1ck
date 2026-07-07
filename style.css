@@ -355,6 +355,10 @@ font-family: 'Urbanist', sans-serif;
     margin-top: 30px !important;
   }
 
+  .about h2 {
+    margin-bottom: 30px;
+  }
+
   .music-grid {
   flex-direction: column;
   align-items: center;
