@@ -341,7 +341,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https:
   }
 
 .about {
-  background-position: center 80%;
+  background-position: center top;
   padding: 120px 20px 60px 20px;
   margin-top: 0;
 }
