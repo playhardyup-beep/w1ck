@@ -171,7 +171,7 @@ font-family: 'Urbanist', sans-serif;
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://playhardyup-beep.github.io/w1ck/lk.PNG');
   background-size: cover;
-  background-position: center;
+  background-position: center 20%;
 }
 
 .about h2 {
