@@ -351,6 +351,10 @@ font-family: 'Urbanist', sans-serif;
     margin-top: 0 !important;
   }
 
+  .about p {
+    margin-top: 30px !important;
+  }
+  
   .music-grid {
   flex-direction: column;
   align-items: center;
