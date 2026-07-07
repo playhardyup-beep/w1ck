@@ -349,6 +349,7 @@ font-family: 'Urbanist', sans-serif;
     background-repeat: no-repeat !important;
     padding: 120px 20px 60px 20px !important;
     margin-top: 0 !important;
+    margin-bottom: 30px;
   }
 
   .about p {
