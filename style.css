@@ -341,7 +341,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https:
   }
 
 .about {
-background-position: 70% 150%;
+  background-position: 70% 150%;
+  padding: 60px 20px;
 }
 
   .music-grid {
@@ -364,10 +365,6 @@ background-position: 70% 150%;
 
   .nav-links a {
     font-size: 0.75rem;
-  }
-
-  .about {
-    padding: 60px 20px;
   }
 
 }
