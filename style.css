@@ -343,7 +343,7 @@ font-family: 'Urbanist', sans-serif;
   }
 
 .about {
-  background-position: center top;
+  background-position: center 40%;
   padding: 120px 20px 60px 20px;
   margin-top: 0;
 }
