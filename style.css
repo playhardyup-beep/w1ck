@@ -339,10 +339,11 @@ background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https:
   .hero p {
     font-size: 0.85rem;
   }
-  
+
 .about {
-  background-position: top center;
+background-position: 60% center;
 }
+
   .music-grid {
   flex-direction: column;
   align-items: center;
