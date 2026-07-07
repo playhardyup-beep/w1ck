@@ -195,7 +195,10 @@ function closeVideo() {
 
 // Popup
 setTimeout(() => {
-  document.getElementById('popup').classList.add('active');
+  if (!localStorage.getItem('popupShown')) {
+    document.getElementById('popup').classList.add('active');
+    localStorage.setItem('popupShown', 'true');
+  }
 }, 1500);
 
 function closePopup() {
