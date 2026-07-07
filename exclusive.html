@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kid Kwesi - Hit the Road</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="prerelease">
+      <p class="prerelease-label">You're early.</p>
+      <h1><span class="accent">Hit the Road</span></h1>
+      <p class="prerelease-sub">Dropping in</p>
+      <div class="countdown">
+        <div class="countdown-block">
+          <span id="hours">00</span>
+          <p>Hours</p>
+        </div>
+        <div class="countdown-block">
+          <span id="minutes">00</span>
+          <p>Minutes</p>
+        </div>
+        <div class="countdown-block">
+          <span id="seconds">00</span>
+          <p>Seconds</p>
+        </div>
+      </div>
+      <div class="prerelease-player" id="player" style="display:none;">
+<p class="track-title" style="margin-bottom: 20px;">Hit the Road — Kid Kwesi</p>        <audio controls controlsList="nodownload">
+          <source src="htr.mp3" type="audio/mpeg">
+        </audio>
+        <p class="prerelease-note">This is for your ears only. The world hears this in 48 hours.</p>
+      </div>
+    </section>
+
+    <script>
+      // SET YOUR RELEASE DATE HERE
+const releaseDate = new Date('2026-08-01T00:00:00');      function updateCountdown() {
+        const now = new Date();
+        const diff = releaseDate - now;
+
+        if (diff <= 0) {
+          document.querySelector('.countdown').style.display = 'none';
+          document.querySelector('.prerelease-sub').style.display = 'none';
+          document.getElementById('player').style.display = 'block';
+          return;
+        }
+
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

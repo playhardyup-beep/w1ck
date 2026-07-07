@@ -1,6 +1,5 @@
 /* Import a Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=DM+Sans:wght@300;400&family=Inter:wght@300;400&family=Urbanist:wght@300;400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=DM+Sans:wght@300;400&family=Inter:wght@300;400&family=Urbanist:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -170,7 +169,7 @@ font-family: 'Urbanist', sans-serif;
   max-width: 100%;
   margin-top: 60px;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('gg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('lk.png');
   background-size: cover;
   background-position: center;
 }
@@ -652,4 +651,137 @@ font-family: 'Urbanist', sans-serif;
 
 .popup-box button[type="submit"]:hover {
   background-color: #0088cc;
+}
+
+/* Exclusive Page */
+.exclusive {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.exclusive h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.exclusive-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.track-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+audio {
+  width: 300px;
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+/* Pre-release Page */
+.prerelease {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.prerelease-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.prerelease h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.prerelease-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.countdown {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-block span {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  color: #ff4444;
+  font-weight: 700;
+  text-shadow: 0 0 20px #ff444466;
+}
+
+.countdown-block p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.prerelease-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.prerelease-note {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #555555;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-style: italic;
 }
