@@ -342,13 +342,14 @@ font-family: 'Urbanist', sans-serif;
     font-size: 0.85rem;
   }
 
-.about {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://playhardyup-beep.github.io/w1ck/lk.PNG');
-  background-size: contain;
-  background-position: center top;
-  padding: 300px 20px 60px 20px;
-  margin-top: 0;
-}
+  .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://playhardyup-beep.github.io/w1ck/lk.PNG') !important;
+    background-size: contain !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    padding: 400px 20px 60px 20px !important;
+    margin-top: 0 !important;
+  }
 
   .music-grid {
   flex-direction: column;
