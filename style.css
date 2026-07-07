@@ -345,7 +345,7 @@ font-family: 'Urbanist', sans-serif;
 .about {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://playhardyup-beep.github.io/w1ck/lk.PNG');
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 80%;
   padding: 120px 20px 60px 20px;
   margin-top: 0;
 }
