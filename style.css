@@ -794,3 +794,51 @@ audio {
   margin-top: 10px;
   font-style: italic;
 }
+
+/* Fresh Out Section */
+.fresh-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.fresh-out img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fresh-out-info {
+  text-align: left;
+}
+
+.fresh-out-info h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 8px;
+}
+
+.fresh-out-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #00aaff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.fresh-out-title {
+  color: #ff4444;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #222222;
+  margin: 60px auto;
+  width: 60%;
+}
